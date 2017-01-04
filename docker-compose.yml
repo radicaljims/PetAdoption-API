@@ -15,8 +15,8 @@ services:
     container_name: 'pet-api-cont'
     environment:
       MONGODB_URI: mongo
-      GOOGLE_CLIENT_ID: '860669888336-9e17ofrmgu3bo01lr8gbfm4e3noforie.apps.googleusercontent.com'
-      GOOGLE_CLIENT_SECRET: 'MzJaJGDh955urboHNNcXhd3o'
+      GOOGLE_CLIENT_ID: '${GOOGLE_CLIENT_ID}'
+      GOOGLE_CLIENT_SECRET: '${GOOGLE_CLIENT_SECRET}'
       DOMAIN: "http://petadoption.org:8080"
     ports:
       - "8080:8080"
