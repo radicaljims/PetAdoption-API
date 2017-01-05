@@ -17,7 +17,7 @@ services:
       MONGODB_URI: mongo
       GOOGLE_CLIENT_ID: '${GOOGLE_CLIENT_ID}'
       GOOGLE_CLIENT_SECRET: '${GOOGLE_CLIENT_SECRET}'
-      DOMAIN: "http://petadoption.org:8080"
+      DOMAIN: "${DOMAIN}"
     ports:
       - "8080:8080"
     depends_on:
